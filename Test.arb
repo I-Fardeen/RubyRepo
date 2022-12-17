@@ -1,0 +1,53 @@
+class Place
+    @hasAddress = false
+    @isOpen = false
+    @address = nil
+end
+
+class TajMahal < Place
+    def initializer()
+        @details = ""
+        @address = ""
+        @isOpen = true
+    end
+    def gethasAddress()
+        @hasAddress
+    end
+    def getisOpen()
+        @isOpen
+    end
+    def setAddress(address)
+        @address = address
+    end
+    def setOpen(isOpen)
+        @isOpen = isOpen
+    end
+    def setHasAddress(hasAddress)
+        @hasAddress = hasAddress
+    end
+    def getAddress()
+        @address
+    end
+    def getDetails()
+        @details
+    end
+    def setDetails(details)
+        @details = details
+    end
+end
+
+obj = TajMahal.new
+obj.setAddress("Agra")
+obj.setDetails("It's a tourist place")
+obj.setHasAddress(true)
+obj.setOpen(true)
+
+x = obj.getAddress()
+y = obj.getDetails()
+z = obj.getisOpen()
+j = obj.gethasAddress()
+
+puts "Address: #{x}"
+puts "Details: #{y}"
+puts "Is Open: #{z}"
+puts "Has Address: #{j}"
