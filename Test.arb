@@ -1,3 +1,4 @@
+#Author: Fardeen Ahmad Khan
 class Place
     @hasAddress = false
     @isOpen = false
